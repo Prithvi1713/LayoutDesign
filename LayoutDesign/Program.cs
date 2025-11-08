@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using LayoutDesign.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<LayoutDesignContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LayoutDesignContext") ?? throw new InvalidOperationException("Connection string 'LayoutDesignContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
