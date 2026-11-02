@@ -14,6 +14,6 @@ namespace LayoutDesign.Data
         {
         }
 
-        public DbSet<LayoutDesign.Models.Employee> Employee { get; set; } = default!;
+       // public DbSet<LayoutDesign.Models.Employee> Employee { get; set; } = default!;
     }
 }
