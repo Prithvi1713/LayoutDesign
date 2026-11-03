@@ -4,6 +4,6 @@ namespace LayoutDesign.Models
     {
         public string? RequestId { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public bool  => !string.IsNullOrEmpty(RequestId);
     }
 }
