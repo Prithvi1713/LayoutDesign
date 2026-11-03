@@ -24,4 +24,23 @@
     <h4> check the jenkins is job trigger and merge those changes or not and jenkins job are build or not automatically </h4>
     <h4> congratulations you are successfully learn jenkins free style project deployment....!!!! </h4>
     <h4> you have now configure the new settings which is post build application and add the email to sent the notification for build fail and unstable build </h4>
+
+    <h5> steps for post build action SMPT server</h5>
+    <p>
+        <h3> to generate app password go to the gmail account search app setting </h3>
+        <h3> enable two step authentication </h3>
+        <h3> open app password - create app password </h3>
+        <h3> copy 16 character password and </h3>
+    </p>
+    <p>
+       @*  jenkins job -> post build action -> E-mail notification -> check both -> save
+        setting -> system -> EMail Notification -> 
+            smtp server = smtp.gmail.com
+            default use email suffix - @gmail.com
+            advaced 
+                username : emailid 
+                password : app password (16 character)
+                Use TLS
+                SMTP port : 587
+                test configuration and verify *@
 </p>
